@@ -3,111 +3,201 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aspect Lighting | Professional Stage & Event Lighting</title>
+  <title>Aspect Lighting | Stage & Event Lighting</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
 </head>
-<!-- force GitHub Pages redeploy -->
-<body class="bg-black text-zinc-100 font-sans antialiased">
+
+<body class="bg-black text-white font-sans antialiased">
 
   <!-- Header -->
-  <header class="border-b border-zinc-900 bg-black/90 backdrop-blur sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur border-b border-zinc-900">
+    <div class="w-full px-5 md:px-10 h-28 flex items-center justify-between">
 
-      <!-- Logo -->
+      <!-- Prominent ASPECT logo -->
       <a href="index.html" class="block">
         <img
-          src="aspect-logo-dark-transparent.png"
-          alt="Aspect Lighting"
-          class="h-12 w-auto"
+          src="aspect-wordmark-white.png"
+          alt="Aspect"
+          class="h-20 md:h-24 w-auto"
         />
       </a>
 
-      <!-- Navigation -->
-      <nav class="hidden md:flex space-x-8 text-sm uppercase tracking-wider font-semibold">
-        <a href="index.html" class="text-white border-b-2 border-white pb-1">Home</a>
-        <a href="gallery.html" class="text-zinc-400 hover:text-white transition">Gallery</a>
-        <a href="inventory.html" class="text-zinc-400 hover:text-white transition">Inventory</a>
-        <a href="contact.html" class="text-zinc-400 hover:text-white transition">Contact</a>
-      </nav>
+      <!-- Menu -->
+      <details class="relative">
+        <summary class="cursor-pointer select-none text-sm md:text-base font-bold tracking-[0.35em] uppercase text-white hover:text-red-500 transition">
+          Menu
+        </summary>
+
+        <nav class="absolute right-0 mt-6 w-56 bg-black border border-zinc-800 shadow-2xl">
+          <a href="index.html" class="block px-6 py-4 text-sm uppercase tracking-widest text-white border-b border-zinc-900 hover:bg-red-600 transition">
+            Home
+          </a>
+          <a href="gallery.html" class="block px-6 py-4 text-sm uppercase tracking-widest text-zinc-300 border-b border-zinc-900 hover:bg-red-600 hover:text-white transition">
+            Gallery
+          </a>
+          <a href="inventory.html" class="block px-6 py-4 text-sm uppercase tracking-widest text-zinc-300 border-b border-zinc-900 hover:bg-red-600 hover:text-white transition">
+            Inventory
+          </a>
+          <a href="contact.html" class="block px-6 py-4 text-sm uppercase tracking-widest text-zinc-300 hover:bg-red-600 hover:text-white transition">
+            Contact
+          </a>
+        </nav>
+      </details>
 
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="relative min-h-[85vh] flex items-center justify-center bg-black overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-b from-zinc-950 via-black to-zinc-950"></div>
+  <main class="pt-28">
 
-    <div class="relative z-20 max-w-5xl mx-auto text-center px-6">
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-8 leading-tight">
-        Whatever the need,<br />
-        Aspect makes it <span class="underline decoration-red-600 decoration-4 underline-offset-8">happen</span>.
-      </h1>
+    <section class="min-h-[82vh] flex items-center bg-black">
+      <div class="w-full px-6 md:px-10">
+        <div class="max-w-6xl">
 
-      <p class="text-zinc-300 text-xl md:text-2xl lg:text-3xl max-w-3xl mx-auto mb-12 font-light">
-        Start to Finish
-      </p>
+          <p class="text-red-600 text-sm md:text-base font-bold tracking-[0.35em] uppercase mb-8">
+            Stage · Event · Production Lighting
+          </p>
 
-      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-        <a
-          href="inventory.html"
-          class="w-full sm:w-auto bg-white text-black hover:bg-zinc-200 px-8 py-4 text-sm font-bold uppercase tracking-widest transition"
-        >
-          View Inventory
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.95] text-white max-w-5xl">
+            Whatever the need,<br />
+            Aspect makes it happen.
+          </h1>
+
+          <p class="mt-8 text-xl md:text-2xl text-zinc-300 max-w-3xl leading-relaxed">
+            Lighting systems, rentals, design support, and production execution from start to finish.
+          </p>
+
+          <div class="mt-12 flex flex-col sm:flex-row gap-4">
+            <a
+              href="inventory.html"
+              class="inline-flex justify-center items-center px-8 py-4 bg-white text-black text-sm font-bold uppercase tracking-widest hover:bg-red-600 hover:text-white transition"
+            >
+              View Inventory
+            </a>
+
+            <a
+              href="contact.html"
+              class="inline-flex justify-center items-center px-8 py-4 border border-white text-white text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-black transition"
+            >
+              Get A Quote
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="bg-zinc-950 border-y border-zinc-900 py-20">
+      <div class="px-6 md:px-10">
+
+        <div class="flex items-end justify-between gap-8 mb-12">
+          <div>
+            <p class="text-red-600 text-sm font-bold tracking-[0.35em] uppercase mb-4">
+              Services
+            </p>
+            <h2 class="text-3xl md:text-5xl font-black tracking-tight">
+              Built for production.
+            </h2>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+          <a href="inventory.html" class="group border border-zinc-800 p-6 min-h-52 hover:border-red-600 transition">
+            <p class="text-zinc-500 font-mono text-sm mb-8">01</p>
+            <h3 class="text-xl font-bold uppercase tracking-widest mb-4 group-hover:text-red-500 transition">
+              Rentals
+            </h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Lighting fixtures, consoles, control, rigging support, and production-ready equipment.
+            </p>
+          </a>
+
+          <a href="gallery.html" class="group border border-zinc-800 p-6 min-h-52 hover:border-red-600 transition">
+            <p class="text-zinc-500 font-mono text-sm mb-8">02</p>
+            <h3 class="text-xl font-bold uppercase tracking-widest mb-4 group-hover:text-red-500 transition">
+              Events
+            </h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Concerts, corporate events, theatrical productions, installations, and branded activations.
+            </p>
+          </a>
+
+          <a href="contact.html" class="group border border-zinc-800 p-6 min-h-52 hover:border-red-600 transition">
+            <p class="text-zinc-500 font-mono text-sm mb-8">03</p>
+            <h3 class="text-xl font-bold uppercase tracking-widest mb-4 group-hover:text-red-500 transition">
+              Design
+            </h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Practical lighting design support from planning through show execution.
+            </p>
+          </a>
+
+          <a href="contact.html" class="group border border-zinc-800 p-6 min-h-52 hover:border-red-600 transition">
+            <p class="text-zinc-500 font-mono text-sm mb-8">04</p>
+            <h3 class="text-xl font-bold uppercase tracking-widest mb-4 group-hover:text-red-500 transition">
+              Support
+            </h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Direct communication, reliable prep, and on-site technical support.
+            </p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery / Inventory Promo -->
+    <section class="bg-black py-24">
+      <div class="px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <a href="gallery.html" class="group min-h-80 border border-zinc-900 bg-zinc-950 p-8 flex flex-col justify-between hover:border-red-600 transition">
+          <div>
+            <p class="text-red-600 text-sm font-bold tracking-[0.35em] uppercase mb-4">
+              Gallery
+            </p>
+            <h2 class="text-4xl md:text-6xl font-black tracking-tight">
+              Recent work.
+            </h2>
+          </div>
+          <p class="text-zinc-400 text-sm uppercase tracking-widest group-hover:text-white transition">
+            View Gallery →
+          </p>
         </a>
 
-        <a
-          href="contact.html"
-          class="w-full sm:w-auto bg-transparent text-white hover:bg-white hover:text-black border border-white px-8 py-4 text-sm font-bold uppercase tracking-widest transition"
-        >
-          Get A Quote
+        <a href="inventory.html" class="group min-h-80 border border-zinc-900 bg-zinc-950 p-8 flex flex-col justify-between hover:border-red-600 transition">
+          <div>
+            <p class="text-red-600 text-sm font-bold tracking-[0.35em] uppercase mb-4">
+              Inventory
+            </p>
+            <h2 class="text-4xl md:text-6xl font-black tracking-tight">
+              Gear ready.
+            </h2>
+          </div>
+          <p class="text-zinc-400 text-sm uppercase tracking-widest group-hover:text-white transition">
+            Browse Inventory →
+          </p>
         </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Capabilities -->
-  <section class="py-24 bg-zinc-950 border-y border-zinc-900">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-
-        <div class="border-t-2 border-zinc-800 pt-6">
-          <span class="text-xs font-mono text-zinc-500 block mb-2">01 / CAPABILITY</span>
-          <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-widest">
-            Concerts
-          </h3>
-          <p class="text-sm text-zinc-300 leading-relaxed font-light">
-            Reliable lighting systems, control, and production support for live performance environments.
-          </p>
-        </div>
-
-        <div class="border-t-2 border-zinc-800 pt-6">
-          <span class="text-xs font-mono text-zinc-500 block mb-2">02 / CAPABILITY</span>
-          <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-widest">
-            Corporate Events
-          </h3>
-          <p class="text-sm text-zinc-300 leading-relaxed font-light">
-            Clean, professional lighting packages for meetings, galas, activations, and branded events.
-          </p>
-        </div>
-
-        <div class="border-t-2 border-zinc-800 pt-6">
-          <span class="text-xs font-mono text-zinc-500 block mb-2">03 / CAPABILITY</span>
-          <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-widest">
-            Design & Support
-          </h3>
-          <p class="text-sm text-zinc-300 leading-relaxed font-light">
-            Direct access to experienced lighting professionals from planning through show execution.
-          </p>
-        </div>
 
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-black py-12 text-center text-xs tracking-widest text-zinc-500 uppercase">
-    <p>&copy; 2026 Aspect Lighting. All Rights Reserved.</p>
+  <footer class="bg-black border-t border-zinc-900 py-10">
+    <div class="px-6 md:px-10 flex flex-col md:flex-row justify-between gap-6 text-xs uppercase tracking-widest text-zinc-500">
+      <p>&copy; 2026 Aspect Lighting. All Rights Reserved.</p>
+      <a href="contact.html" class="hover:text-white transition">Contact</a>
+    </div>
   </footer>
 
 </body>
